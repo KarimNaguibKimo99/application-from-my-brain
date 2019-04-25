@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B388FF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id= "@+id/before_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/before"
+        />
+    <Button
+        android:id = "@+id/button_before"
+        android:layout_below="@id/before_image_view"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:onClick="openDoor"
+        android:text="open this door" />
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/before_black_image_view"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/before_blackdoor"
+            />
+
+    <Button
+        android:id = "@+id/button_black_door"
+        android:layout_below="@id/before_black_image_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:onClick="openDoorBlack"
+        android:text="open this door" />
+    <ImageView
+        android:layout_below="@id/before_image_view"
+        android:id="@+id/before_red_image_view"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/before_reddoor"/>
+
+    <Button
+        android:id = "@+id/button_before_red_door"
+        android:layout_below="@id/before_red_image_view"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openDoorRed"
+        android:text="open this door" />
+    <ImageView
+        android:id="@+id/before_white_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="207dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/button_black_door"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/before_whitecdoor" />
+    <Button
+        android:id = "@+id/button_white_color"
+        android:layout_below="@id/before_white_image_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:onClick="openWhiteDoor"
+        android:text="open this door" />
+
+    <TextView
+        android:id="@+id/status_text_view"
+        android:layout_below="@id/button_before_red_door"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="16dp"
+        android:text="Open The Door"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"/>
+
+
+
+
+</RelativeLayout>
